@@ -1,0 +1,30 @@
+server:
+  # 服务端口
+  port: 8204
+Spring:
+  redis:
+    # 改成自己redis的ip地址
+    host: 192.168.31.8
+    port: 6379
+    database: 0
+    timeout: 1800000
+    lettuce:
+      pool:
+        # 最大阻塞等待时间(负数表示没限制)
+        max-active: 20
+        max-wait: -1
+  mail:
+    # 配置QQ邮件信息
+    host: smtp.qq.com
+    # 发送邮件者信箱
+    username: 873136927@qq.com
+    # IMAP/SMTP服务时邮箱的密文授权码（之前保存的）
+    password: vbblpmdvmcsfbcbg
+    default-encoding: UTF-8
+    port: 465
+    properties:
+      mail:
+        debug: true
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
