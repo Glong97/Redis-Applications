@@ -33,11 +33,11 @@ public class ResultJson {
     }
 
     public static ResultJson success(){
-        return success(ResultConstant.SUCCESS_MSG,null);
+        return success(ResultConstant.SUCCESS_SEND,null);
     }
 
     public static ResultJson success(Object data){
-        return success(ResultConstant.SUCCESS_MSG,data);
+        return success(ResultConstant.SUCCESS_SEND,data);
     }
 
     public static ResultJson success(String msg,Object data){
@@ -45,38 +45,14 @@ public class ResultJson {
     }
 
     public static ResultJson error(){
-        return error(ResultConstant.ERROR_MSG,null);
+        return error(ResultConstant.ERROR_SEND,null);
     }
 
     public static ResultJson error(Object data){
-        return error(ResultConstant.ERROR_MSG,data);
+        return error(ResultConstant.ERROR_SEND,data);
     }
 
     public static ResultJson error(String msg,Object data){
         return new ResultJson(ResultConstant.ERROR,msg,data);
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
     }
 }

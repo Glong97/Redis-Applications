@@ -7,15 +7,8 @@ public class ResultConstant {
      * */
     public static final int SUCCESS = 200;
     public static final int ERROR = 500;
-    public static final String SUCCESS_MSG = "验证码发送成功";
-    public static final String ERROR_MSG = "验证码发送失败";
-    public static final String SUCCESS_SELECT_MSG = "查询成功";
-    public static final String ERROR_SELECT_MSG = "查询失败";
-    public static final String SUCCESS_UPDATE_MSG = "修改成功";
-    public static final String ERROR_UPDATE_MSG = "修改失败";
-    public static final String SUCCESS_DELETE_MSG = "删除成功";
-    public static final String ERROR_DELETE_MSG = "删除失败";
-    public static final String SUCCESS_INSERT_MSG = "插入成功";
-    public static final String ERROR_INSERT_MSG = "插入失败";
-
+    public static final String SUCCESS_SEND = "验证码发送成功";
+    public static final String ERROR_SEND = "验证码发送失败";
+    public static final String SUCCESS_CODE = "验证码验证成功";
+    public static final String ERROR_CODE = "验证码验证失败";
 }
