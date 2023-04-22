@@ -67,7 +67,7 @@ public class MailController {
         if(inputCode.equals(code)){
             return ResultJson.success(ResultConstant.SUCCESS_CODE,null);
         }else{
-            return ResultJson.error(ResultConstant.ERROR_SEND,null);
+            return ResultJson.error(ResultConstant.ERROR_CODE,null);
         }
 
     }
